@@ -62,15 +62,12 @@ Notes:
 . capture log close
 
 . log using "./log/main.log", replace text
-(file
-    /Users/benxue/Dropbox/research/paper/Abortion-Crime-test/replication_clea
-    > n/log/main.log not found)
 -------------------------------------------------------------------------------
       name:  <unnamed>
        log:  /Users/benxue/Dropbox/research/paper/Abortion-Crime-test/replicati
 > on_clean/log/main.log
   log type:  text
- opened on:  26 Oct 2026, 09:50:45
+ opened on:  26 Oct 2026, 14:07:18
 
 . display "`tag'"
 main.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
@@ -107,7 +104,6 @@ main.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 > ean/, see README.md)
 . *********************************
 . /*
-> cap ssc install distinct
 > do "./code/management/bx_abt-crime-data01_ucr_offense_clean.do"   // UCR offe
 > nses known, agency x year
 > do "./code/management/bx_abt-crime-data01_ucr_arrest_clean.do"    // UCR prop
@@ -150,14 +146,14 @@ main.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-figure1.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+figure1.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -260,7 +256,6 @@ figure1.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
 >         legend(off) graphregion(color(white)) plotregion(color(white))
 
 . graph export "./result/figure/figure1_panelA_trend.png", replace width(1500)
-(file ./result/figure/figure1_panelA_trend.png not found)
 file ./result/figure/figure1_panelA_trend.png written in PNG format
 
 . 
@@ -315,7 +310,7 @@ xij variables:
 . tempfile change
 
 . save `change'
-file /var/folders/nb/q4257z5x5tj_s2fk3_qmnrwh0000gn/T//St36971.000001 saved
+file /var/folders/nb/q4257z5x5tj_s2fk3_qmnrwh0000gn/T//St46104.000001 saved
     as .dta format
 
 . 
@@ -397,7 +392,6 @@ variable city was str11 now str14
 . keep x_c y_c x_l y_l city
 
 . save "./data_clean/txcities.dta", replace
-(file ./data_clean/txcities.dta not found)
 file ./data_clean/txcities.dta saved
 
 . restore
@@ -417,7 +411,6 @@ file ./data_clean/txcities.dta saved
 >         graphregion(color(white) margin(r+5))
 
 . graph export "./result/figure/figure1_panelB_map.png", replace width(1500)
-(file ./result/figure/figure1_panelB_map.png not found)
 file ./result/figure/figure1_panelB_map.png written in PNG format
 
 . 
@@ -436,14 +429,14 @@ end of do-file
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-figure2.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+figure2.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -529,7 +522,6 @@ figure2.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
 (note:  named style k not found in class color, default attributes used)
 (note:  named style k not found in class color, default attributes used)
 (note:  named style k not found in class color, default attributes used)
-(file ./result/figure/figure2_panelA_property.png not found)
 file ./result/figure/figure2_panelA_property.png written in PNG format
 
      +--------------------------------------------------+
@@ -553,7 +545,6 @@ file ./result/figure/figure2_panelA_property.png written in PNG format
 (note:  named style k not found in class color, default attributes used)
 (note:  named style k not found in class color, default attributes used)
 (note:  named style k not found in class color, default attributes used)
-(file ./result/figure/figure2_panelB_nonproperty.png not found)
 file ./result/figure/figure2_panelB_nonproperty.png written in PNG format
 
 . 
@@ -572,14 +563,14 @@ end of do-file
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-figure3.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+figure3.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -1763,7 +1754,6 @@ added macro:
 
 added macro:
              e(yearFE) : "Y"
-(file ./result/table/figure3_estimates_up25.csv not found)
 (output written to ./result/table/figure3_estimates_up25.csv)
 actual_burg_total up50
 Iteration 1:   deviance = 3.1456e+05  eps = .         iters = 3    tol = 1.0e-0
@@ -2882,7 +2872,6 @@ added macro:
 
 added macro:
              e(yearFE) : "Y"
-(file ./result/table/figure3_estimates_up50.csv not found)
 (output written to ./result/table/figure3_estimates_up50.csv)
 actual_burg_total up100
 Iteration 1:   deviance = 2.9577e+05  eps = .         iters = 3    tol = 1.0e-0
@@ -3992,7 +3981,6 @@ added macro:
 
 added macro:
              e(yearFE) : "Y"
-(file ./result/table/figure3_estimates_up100.csv not found)
 (output written to ./result/table/figure3_estimates_up100.csv)
 
 . 
@@ -4014,7 +4002,6 @@ added macro:
 
 . graph export "./result/figure/figure3_panelA_type.png", as(png) replace width
 > (1500)
-(file ./result/figure/figure3_panelA_type.png not found)
 file ./result/figure/figure3_panelA_type.png written in PNG format
 
 . 
@@ -4032,7 +4019,6 @@ file ./result/figure/figure3_panelA_type.png written in PNG format
 
 . graph export "./result/figure/figure3_panelB_age_sex.png", as(png) replace wi
 > dth(1500)
-(file ./result/figure/figure3_panelB_age_sex.png not found)
 file ./result/figure/figure3_panelB_age_sex.png written in PNG format
 
 . 
@@ -4051,14 +4037,14 @@ end of do-file
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-figure4.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+figure4.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -4433,7 +4419,6 @@ Absorbed degrees of freedom:
   3.         graph export "./result/figure/figure4_panelA_poisson.png", replace
 >  width(1500)
   4. }
-(file ./result/figure/figure4_panelA_poisson.png not found)
 file ./result/figure/figure4_panelA_poisson.png written in PNG format
 
 . 
@@ -4559,7 +4544,6 @@ age_50_59_~r |  -40.02976   11.21064    -3.57   0.000    -62.00222    -18.0573
   3.         graph export "./result/figure/figure4_panelB_bjs.png", replace wid
 > th(1500)
   4. }
-(file ./result/figure/figure4_panelB_bjs.png not found)
 file ./result/figure/figure4_panelB_bjs.png written in PNG format
 
 . 
@@ -4702,7 +4686,6 @@ index_prop~r | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
   3.         graph export "./result/figure/figure4_panelC_sa.png", replace widt
 > h(1500)
   4. }
-(file ./result/figure/figure4_panelC_sa.png not found)
 file ./result/figure/figure4_panelC_sa.png written in PNG format
 
 . 
@@ -4721,14 +4704,14 @@ end of do-file
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-figure5.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+figure5.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -5104,7 +5087,6 @@ Absorbed degrees of freedom:
   3.         graph export "./result/figure/figure5_panelA_poisson.png", replace
 >  width(1500)
   4. }
-(file ./result/figure/figure5_panelA_poisson.png not found)
 file ./result/figure/figure5_panelA_poisson.png written in PNG format
 
 . 
@@ -5230,7 +5212,6 @@ age_50_59_~r |  -.4286762   5.177173    -0.08   0.934    -10.57575    9.718396
   3.         graph export "./result/figure/figure5_panelB_bjs.png", replace wid
 > th(1500)
   4. }
-(file ./result/figure/figure5_panelB_bjs.png not found)
 file ./result/figure/figure5_panelB_bjs.png written in PNG format
 
 . 
@@ -5373,7 +5354,6 @@ nonpropert~r | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
   3.         graph export "./result/figure/figure5_panelC_sa.png", replace widt
 > h(1500)
   4. }
-(file ./result/figure/figure5_panelC_sa.png not found)
 file ./result/figure/figure5_panelC_sa.png written in PNG format
 
 . 
@@ -5392,14 +5372,14 @@ end of do-file
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-table1.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+table1.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -6787,7 +6767,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $tab_opt ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table1_panelA_property.csv not found)
 (output written to ./result/table/table1_panelA_property.csv)
 
 . 
@@ -6839,7 +6818,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $tab_opt ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table1_panelB_nonproperty.csv not found)
 (output written to ./result/table/table1_panelB_nonproperty.csv)
 
 . 
@@ -6858,14 +6836,14 @@ end of do-file
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-table2.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+table2.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -7859,7 +7837,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $optionmech ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table2_panelA_labor_force.csv not found)
 (output written to ./result/table/table2_panelA_labor_force.csv)
 
 . 
@@ -7909,7 +7886,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $optionmech ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table2_panelB_unemployment.csv not found)
 (output written to ./result/table/table2_panelB_unemployment.csv)
 
 . 
@@ -7928,14 +7904,14 @@ end of do-file
 
 . local who  "Ben Xue"            // author
 
-. local dte  "2026-10-24"            // created date
+. local dte  "2026-10-26"            // created date
 
 . local dte2 "`c(current_date)'"     // last run date
 
 . local tag  "`pgm'.do, created by `who' on `dte', last run on `dte2'"
 
 . display "`tag'"
-table3.do, created by Ben Xue on 2026-10-24, last run on 26 Oct 2026
+table3.do, created by Ben Xue on 2026-10-26, last run on 26 Oct 2026
 
 . 
 . /*
@@ -9547,7 +9523,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $optionmech ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table3_panelA_income.csv not found)
 (output written to ./result/table/table3_panelA_income.csv)
 
 . 
@@ -9597,7 +9572,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $optionmech ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table3_panelC_debt_to_income.csv not found)
 (output written to ./result/table/table3_panelC_debt_to_income.csv)
 
 . 
@@ -9649,7 +9623,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $optionmech ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table3_panelD_mortgage_delinquency.csv not found)
 (output written to ./result/table/table3_panelD_mortgage_delinquency.csv)
 
 . 
@@ -9701,7 +9674,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $optionmech ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table3_panelE_evictions.csv not found)
 (output written to ./result/table/table3_panelE_evictions.csv)
 
 . 
@@ -10059,7 +10031,6 @@ Standard errors in parentheses
 > 50 Treatment up100 Treatment) keep(Treatment) $option1 ///
 >         mtitles("25 miles" "25 miles" "50 miles" "50 miles" "100 miles" "100 
 > miles") replace
-(file ./result/table/table3_panelB_income_iqr.csv not found)
 (output written to ./result/table/table3_panelB_income_iqr.csv)
 
 . 
@@ -10071,7 +10042,7 @@ end of do-file
        log:  /Users/benxue/Dropbox/research/paper/Abortion-Crime-test/replicati
 > on_clean/log/main.log
   log type:  text
- closed on:  26 Oct 2026, 10:01:48
+ closed on:  26 Oct 2026, 14:21:05
 -------------------------------------------------------------------------------
 
 . 
