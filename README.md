@@ -2,7 +2,11 @@
 
 Erkmen G. Aslim, Wei Fu, Caitlin Myers, Erdal Tekin, Bingjin Xue
 
-This package replicates the tables and figures in the main text of the paper (Tables 1-3, Figures 1-5). It starts from the cleaned Texas data in `data_clean/`. Every input comes from public sources ([Data sources](#data-sources)). The code that builds the cleaned data from the raw files is in `code/management/` for reference. It is not run by `main.do`.
+This package replicates the tables and figures in the main text of the paper (Tables 1-3, Figures 1-5). It starts from the cleaned Texas data in `data_clean/`. Every input comes from public sources ([Data sources](#data-sources)). The code that builds the cleaned data from the raw files is in `code/management/` for reference (the authors do not have permission to redistribute the raw data; all raw data are publicly available). 
+
+This reposite will be updated regularly as the project progresses.
+
+Ungated (old) version of the paper [NBER version](https://www.nber.org/papers/w34245)
 
 ## Quick start
 
